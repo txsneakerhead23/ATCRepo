@@ -1,5 +1,5 @@
 # ATCRepo
-It is reccomended that you use a computer with the minimum specs before running any of these scripts:
+It is recomended that you use a computer with the minimum specs before running any of these scripts:
 
 - 2 GB of free RAM
 
