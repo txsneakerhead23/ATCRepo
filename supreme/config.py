@@ -1,10 +1,3 @@
 path = "/path/to/your/chrome/profile"
-cvvone = "1111"
-cvvtwo = "1111"
-cvvthree = "1111"
-cvvfour = "1111"
-sec_code = "111"
-month = "11"
-year = "2020"
-key = 'captchasolutions key'
+key = 'captchasolutions key' #paste the key inside the single quotes; do the same for the secret
 secret = 'captchasolutionssecret'
