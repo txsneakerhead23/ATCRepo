@@ -100,7 +100,7 @@ def itemone():
         else:
             try:
                 waitfunction()
-                driver.implicitly_wait(1.5)
+                driver.implicitly_wait(3)
                 driver.find_element_by_partial_link_text(kword1).click()
                 counter += 1
                 break
@@ -119,8 +119,10 @@ def itemone():
                 refreshfunc()
     if int(counter) == 1:
         itemonecolor()
-    elif int(counter) == 2:
+    elif int(counter) == 2 and int(items) == 2:
         itemtwo()
+    elif int(counter) == 2 and int(items) != 2:
+        refreshfunc()
     else:
         pass
 
@@ -130,7 +132,7 @@ def itemonecolor():
         itemone()
         return
     try:
-        driver.implicitly_wait(.5)
+        driver.implicitly_wait(2)
         driver.find_element_by_xpath(str("//a[@data-style-name=" + str("'") + str(color1) + str("'") + str("]"))).click()
     except:
         print "color selection failed for item one, getting default color"
