@@ -3,7 +3,7 @@ This python based “bot” is a free openatc and auto checkout bot for supremen
 New File
 This release features a new file, the config.py file. To run this program correctly, you must edit this file.
 
-												Editing the Config File
+						Editing the Config File
 To edit the config file, you have to know three things:
 The path to your default chrome profile, your captchasolutions key and your captchasolutions secret. 
 
