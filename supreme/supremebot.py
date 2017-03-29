@@ -35,7 +35,7 @@ now = datetime.datetime.now()
 print now
 time_list = []
 time_list.append(now.year)
-time_list.append("-")
+time_list.append("-"
 time_list.append(now.month)
 time_list.append("-")
 time_list.append(now.day)
