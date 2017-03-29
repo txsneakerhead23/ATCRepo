@@ -40,12 +40,12 @@ Open PowerShell and type "mkdir supremebot".
 Press enter.
 Download chromedriver and extract the file to the supremebot folder.
 Go to the github page and download the whole supreme folder as a zip file.
-Click on the little down arrow on the download bar
+Click on the little down arrow on the download bar.
 
 Click Show in Folder
-Extract the files(should be a button at the top) to the supremebot folder you just made
-Right click on the supremebot folder where all the files you just downloaded should be
-CLick on “Open command window here”
+Extract the files(should be a button at the top) to the supremebot folder you just made.
+Right click on the supremebot folder where all the files you just downloaded should be.
+CLick on “Open command window here”.
 IN the command window type the pip commands from steps 12-17 in the Ubuntu tutorial above.
 Type chmod u+x supremebotv2.py into the command window.
 To run the bot, type supremebotv2.py in the same command window. 
