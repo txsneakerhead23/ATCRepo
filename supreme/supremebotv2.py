@@ -298,7 +298,10 @@ def checkout():
 
     except NoSuchElementException:
         print "PLEASE AGREE TO TERMS AND CONDITIONS BY CLICKING THE CHECKBOX"
-    injectionpayload()
+    if str(testmode) == "no":
+        injectionpayload()
+    else:
+        pass
     print "--- %s seconds ---" % (time.time() - start_time)
 
 
