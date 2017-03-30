@@ -286,7 +286,6 @@ def checkout():
             print "cookie loading failed"
     driver.get("http://supremenewyork.com/checkout")
     waitfunctioncheckout()
-    time.sleep(7)
     if str(driver.current_url) == "http://www.supremenewyork.com/shop" or str(driver.current_url) == "http://www.supremenewyork.com/index":
         itemone()
         return
@@ -345,7 +344,6 @@ def injectionpayload():
 
 
 getcaptcha_token()
-itemone()
 if __name__ == '__main__':
     Thread(target = itemone).start()
     Thread(target = keepcaptchatoken).start()
