@@ -44,7 +44,13 @@ if int(items) != 1:
 else:
     pass
 options = Options()
-datadir = "--user-data-dir=" + str(path)
+if str(operatingsystem) == "Linux" or "Mac":
+    datadir = "--user-data-dir=" + str(path)
+else:
+    datadir = "--user-data-dir=" + str(path)
+    datadir.replace('Default', '')
+    
+
 options.add_argument(datadir)
 raw_input("Start?")
 driver = webdriver.Chrome(chrome_options=options)
