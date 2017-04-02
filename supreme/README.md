@@ -13,4 +13,4 @@ Once you have your key, path and secret, you can simply paste them into the appr
 
 To run the bot, simply double click on "suprembotv2" in the windowsbot folder. 
 
-If you have any questions, please contact me via email or Reddit(as explained above). 
+If you have any questions about installation, how the bot works, or how successful it is, please contact me via email or Reddit(as explained above) 
