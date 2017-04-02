@@ -14,3 +14,11 @@ Once you have your key, path and secret, you can simply paste them into the appr
 To run the bot, simply double click on "suprembotv2" in the windowsbot folder. 
 
 If you have any questions about installation, how the bot works, or how successful it is, please contact me via email or Reddit(as explained above) 
+
+To use the mac bot, you can follow the same steps as above, but because the file is a windows executable, there is an additional step you need to take. 
+
+To successfully run the bot on mac, you need to install and run the program with Wine. Instructions on how to do so can be found here: https://www.howtogeek.com/263211/how-to-run-windows-programs-on-a-mac-with-wine/
+
+To successfully run the bot on a Debian based Linux distro, you also need to install and run the file with Wine(after following all f the instructions for windows bot). Instructions on how to do so can be found here: https://www.howtogeek.com/105271/how-to-run-windows-software-on-ubuntu-with-wine/
+
+If you have any questions about installation, how the bot works, or how successful it is, please contact me via email or Reddit(as explained above) 
