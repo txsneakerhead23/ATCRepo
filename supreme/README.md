@@ -17,6 +17,7 @@ To run the bot, simply double click on "suprembotv2" in the windowsbot folder.
 To use the mac bot, you can follow the same steps as above, but because the file is a windows executable, there is an additional step you need to take. 
 
 To successfully run the bot on mac, you need to run the program with Wine. Instructions on how to do so can be found here: https://www.howtogeek.com/263211/how-to-run-windows-programs-on-a-mac-with-wine/
+
 -----------------------------------------------------------------------------------------------------------------------------
 To successfully run the bot on a Debian based Linux distro, you also need to run the file with Wine(after following all of the instructions for windows bot). Instructions on how to do so can be found here: https://www.howtogeek.com/105271/how-to-run-windows-software-on-ubuntu-with-wine/
 
