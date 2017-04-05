@@ -5,7 +5,7 @@ To use the windows bot, follow these steps:
 
 The config files contains all the necessary info that is needed to successfully run the bot. This info includes: your personal "key" and "secret" and the path to your chrome profile.
 
-To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $25. No other bot on the market currently has a countodown timer, an automatic start, captcha token harvesting, captcha solving, 3+ items per order, select item and size, key word search and different modes for under $50. 
+To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $14. This is used for our captcha solving service.  
 
 Furthermore, this bot uses your default chrome profile(the path to which can be obtained by typing chrome://version into the url bar of google chrome and copying the Profile Path) and, as such, it is expected that you have all of your checkout information autofilled on the checkout page of Supreme's website. 
 
@@ -14,6 +14,26 @@ Once you have your key, path and secret, you can simply paste them into the appr
 To run the bot, simply double click on "suprembotv2" in the windows bot folder. 
 
 ----------------------------------------------------------------------------------------------------------------------------
-If you would like to use our software and you do not use Windows but instead use an os such as Mac or Linux, please email grandstreetsupreme@gmail.com or message /u/grandstreetsupreme on Reddit. For mac or Linux, we have to compile a .app version of the bot specifically designed for you on our server as one cannot edit the config.py file after the .app aplication is made(unlike what you can do with .exe applications). After we make a specialized version of the bot for you, you will be sent the bot in zip format via email.
+If you would like to use our software and you do not use Windows but instead use an os such as Mac or Linux, please create an account at captchasolutions.com and add tokens to it, as well as getting the path to your default chrome profile and copying the key/secret into the config file. To install the bot on Mac, follow these instructions:
+1. Open terminal
+2. Run: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" in the terminal window
+3. When that finishes, run: brew install subversion
+4. When that finishes run: mkdir supremebot
+5. When that finishes run: cd supremebot
+7. when that finishes run: svn checkout https://github.com/GrandStreetSupreme/ATCRepo/trunk/supreme
+8. when that finishes run: cd supreme
+9. When that finishes run: cd
+10. When that finishes run: brew install python --fix-missing
+11. When that finishes run: easy_install pip
+12. When that finishes run: wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_mac64.zip
+13. When that finishes run: brew install unzip
+14. When that finishes run: unzip chromedriver_mac64.zip
+15. When that finishes run: mv chromedriver /usr/bin
+16. When that finishes run: cd supremebot
+17. When that finishes run: cd supreme
+18. When that finishes run: chmod u+x setup.py
+19. When that finishes run: python setup.py
+20. When that finishes edit the config.py file to include your path, key and secret
+20. After you do that, to run the bot run: python supremebotv2.py
 
-If you have any questions about installation, how the bot works, or how successful it is, please contact me via email or Reddit(as explained above) 
+
