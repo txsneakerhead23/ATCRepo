@@ -1,3 +1,7 @@
+General Notes:
+- You mustn't have any other instances of Chrome open when running the bot
+- If you encounter any errors relating to "Permission denied", simply append the word "sudo" without the quotes as a prefix to the command that throws that error
+
 To use the windows bot, follow these steps:
 1. Download the zip file by clicking "View Raw" after clicking on the zip file above
 2. Extract the zip file to any folder you please
