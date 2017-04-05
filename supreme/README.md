@@ -36,4 +36,6 @@ If you would like to use our software and you do not use Windows but instead use
 20. When that finishes edit the config.py file to include your path, key and secret
 20. After you do that, to run the bot run: python supremebotv2.py
 
-
+To install it on Linux, follow the same instructions fro the mac tutorial except:
+- Do not do step two
+- Everytime the word "brew" is used, use "apt-get" instead e.g 'brew install python' becomes 'apt-get install python'
