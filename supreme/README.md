@@ -40,4 +40,6 @@ To install it on Linux, follow the same instructions fro the mac tutorial except
 - Do not do step two
 - Everytime the word "brew" is used, use "apt-get" instead e.g 'brew install python' becomes 'apt-get install python'
 - instead of running what ist says to in step 12, run this: 
+
+
 wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
