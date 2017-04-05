@@ -14,7 +14,7 @@ Once you have your key, path and secret, you can simply paste them into the appr
 To run the bot, simply double click on "suprembotv2" in the windows bot folder. 
 
 ----------------------------------------------------------------------------------------------------------------------------
-If you would like to use our software and you do not use Windows but instead use an os such as Mac or Linux, please either email or message grandstreetsupreme for a key and secret, as well as getting the path to your default chrome profile and copying the key/secret into the config file. To install the bot on Mac, follow these instructions:
+If you would like to use our software and you do not use Windows but instead use an os such as Mac or Linux, please  email or message grandstreetsupreme for a key and secret, as well as getting the path to your default chrome profile and copying the key/secret into the config file. To install the bot on Mac, follow these instructions:
 1. Open terminal
 2. Run: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" in the terminal window
 3. When that finishes, run: brew install subversion
