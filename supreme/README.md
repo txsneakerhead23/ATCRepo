@@ -31,7 +31,7 @@ If you would like to use our software and you do not use Windows but instead use
 16. When that finishes run: cd supremebot
 17. When that finishes run: cd supreme
 18. When that finishes run: chmod u+x setup.py
-19. When that finishes run: python setup.py
+19. When that finishes run: sudo python setup.py
 20. When that finishes edit the config.py file to include your path, key and secret
 20. After you do that, to run the bot run: python supremebotv2.py
 
