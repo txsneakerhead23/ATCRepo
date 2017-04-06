@@ -28,7 +28,7 @@ If you would like to use our software and you do not use Windows but instead use
 9. When that finishes run: cd
 10. When that finishes run: brew install python --fix-missing
 11. When that finishes run: easy_install pip
-12. When that finishes run: wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_mac64.zip
+12. When that finishes run: wget https://chromedriver.storage.googleapis.com/2.28/chromedriver_mac64.zip
 13. When that finishes run: brew install unzip
 14. When that finishes run: unzip chromedriver_mac64.zip
 15. When that finishes run: mv chromedriver /usr/bin
@@ -45,4 +45,4 @@ To install it on Linux, follow the same instructions fro the mac tutorial except
 - instead of running what ist says to in step 12, run this: 
 
 
-wget https://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/2.28/chromedriver_linux64.zip
