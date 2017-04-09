@@ -25,9 +25,8 @@ token_list = []
 def tryagain():
     global items
     items = int(raw_input("How many items?:"))
-    if items > 4:
-        print "More that four items makes the bot run slower and decreases your chances of getting anything!"
-        tryagain()
+    if items > 10:
+        print "More that ten items makes the bot run slower and decreases your chances of getting anything!"
     else:
         pass
 tryagain()
