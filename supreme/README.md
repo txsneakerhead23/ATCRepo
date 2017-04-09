@@ -21,7 +21,7 @@ To use the windows bot, follow these steps:
 2. Extract the zip file to any folder you please
 3. Click on the folder and, inside that folder, there are two key files:config and supremebotv2
 
-The config files contains all the necessary info that is needed to successfully run the bot. This info includes: your personal "key" and "secret" and the path to your chrome profile.
+The config files contains all the necessary info that is needed to successfully run the bot. This info includes: your personal "key" and "secret" and the path to your chrome profile as well as all of your checkout info that the bot uses should Autofill fail.
 
 To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $14. 
 Furthermore, this bot uses your default chrome profile(the path to which can be obtained by typing chrome://version into the url bar of google chrome and copying the Profile Path) and, as such, it is expected that you have all of your checkout information autofilled on the checkout page of Supreme's website. 
