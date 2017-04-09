@@ -7,6 +7,8 @@ V3 is out! V3 includes all the features found in v2(start timer, test mode, smar
 - Reworded print statements
 - Handles more website anomalies/inconsistencies with the buying process
 - Restructured page url detection
+- Fixed encoding issue with Mac
+- Fixed Chromedriver issue
 Also, as of 2017-04-08, there is no Windows exe out yet for V3(the V2 exe can be found in the pastreleases folder), so that should be coming shortly. 
 General Notes:
 - You mustn't have any other instances of Chrome open when running the bot
