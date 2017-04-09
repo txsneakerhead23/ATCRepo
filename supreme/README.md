@@ -9,7 +9,6 @@ V3 is out! V3 includes all the features found in v2(start timer, test mode, smar
 - Restructured page url detection
 - Fixed encoding issue with Mac
 - Fixed Chromedriver issue
-- Also, as of 2017-04-08, there is no Windows exe out yet for V3(the V2 exe can be found in the pastreleases folder), so that should be coming shortly. 
 
 -----------------------------------------------------------------------------------------------------------------------------
 General Notes:
@@ -19,16 +18,16 @@ General Notes:
 To use the windows bot, follow these steps:
 1. Download the zip file by clicking "View Raw" after clicking on the zip file above
 2. Extract the zip file to any folder you please
-3. Click on the folder and, inside that folder, there are two key files:config and supremebotv2
+3. Click on the folder and, inside that folder, there are two key files:config and supremebotv3
 
 The config files contains all the necessary info that is needed to successfully run the bot. This info includes: your personal "key" and "secret" and the path to your chrome profile as well as all of your checkout info that the bot uses should Autofill fail.
 
-To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $14. 
+To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $14-all money is used to fund our CAPTCHA service. 
 Furthermore, this bot uses your default chrome profile(the path to which can be obtained by typing chrome://version into the url bar of google chrome and copying the Profile Path) and, as such, it is expected that you have all of your checkout information autofilled on the checkout page of Supreme's website. 
 
-Once you have your key, path and secret, you can simply paste them into the appropriate places in the config file.
+Once you have your key, path and secret and checkout info, you can simply paste them into the appropriate places in the config file.
 
-To run the bot, simply double click on "suprembotv2" in the windows bot folder. 
+To run the bot, simply double click on "suprembotv3.exe" in the windows bot/double click on me folder. 
 
 ----------------------------------------------------------------------------------------------------------------------------
 If you would like to use our software and you do not use Windows but instead use an os such as Mac or Linux, please  email or message grandstreetsupreme for a key and secret, as well as getting the path to your default chrome profile and copying the key/secret into the config file. To install the bot on Mac, follow these instructions:
@@ -51,7 +50,7 @@ If you would like to use our software and you do not use Windows but instead use
 18. When that finishes run: chmod u+x setup.py
 19. When that finishes run: sudo python setup.py
 20. When that finishes edit the config.py file to include your path, key and secret
-20. After you do that, to run the bot run: python supremebotv2.py
+20. After you do that, to run the bot run: python supremebotv3.py
 
 To install it on Linux, follow the same instructions fro the mac tutorial except:
 - Do not do step two
