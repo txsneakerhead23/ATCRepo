@@ -10,6 +10,8 @@ V3 is out! V3 includes all the features found in v2(start timer, test mode, smar
 - Fixed encoding issue with Mac
 - Fixed Chromedriver issue
 Also, as of 2017-04-08, there is no Windows exe out yet for V3(the V2 exe can be found in the pastreleases folder), so that should be coming shortly. 
+
+-----------------------------------------------------------------------------------------------------------------------------
 General Notes:
 - You mustn't have any other instances of Chrome open when running the bot
 - If you encounter any errors relating to "Permission denied", simply append the word "sudo" without the quotes as a prefix to the command that throws that error
