@@ -1,3 +1,13 @@
+
+UPDATE 2017-04-08 
+V3 is out! V3 includes all the features found in v2(start timer, test mode, smart page, captcha bypass) with new features!
+- You can now buy as many items as you want(V2 only allowed two items)
+- There is now the backupcheckout addition! Recently, Supreme has made a practice of changing the names of web elements just before drop so as to make Autofill not recognize where to put your info and therefore fail. V3 detects this change and, instead of looking for elements by names Supreme can change, it looks for elements by tag names(something Supreme cannot change) and manually fills in the form with your info if Autofill isn't working.
+- Restructured the product find functions
+- Reworded print statements
+- Handles more website anomalies/inconsistencies with the buying process
+- Restructured page url detection
+Also, as of 2017-04-08, there is no Windows exe out yet for V3(the V2 exe can be found in the pastreleases folder), so that should be coming shortly. 
 General Notes:
 - You mustn't have any other instances of Chrome open when running the bot
 - If you encounter any errors relating to "Permission denied", simply append the word "sudo" without the quotes as a prefix to the command that throws that error
