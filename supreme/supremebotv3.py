@@ -90,6 +90,7 @@ def find(item):
     while True:
         waitfunction()
         now = datetime.datetime.now()
+        print "Trying to find this item..."
         if now < elevenam:
             try:
                 driver.implicitly_wait(2)
@@ -97,6 +98,7 @@ def find(item):
                 finalize(item)
                 break
             except NoSuchElementException:
+                print "Could not find this item although it is not 11 yet, so I am refreshing"
                 refreshfunc()
             except (ElementNotVisibleException, StaleElementReferenceException):
                 try:
@@ -109,12 +111,14 @@ def find(item):
                     break
         else:
             try:
+                print "Trying to find this item..."
                 driver.implicitly_wait(2)
                 driver.find_element_by_partial_link_text(item[0]).click()
                 finalize(item)
                 break
             except (StaleElementReferenceException, ElementNotVisibleException, NoSuchElementException):
                 try:
+                    print "Something went wrong, I am still trying"
                     driver.implicitly_wait(2)
                     driver.find_element_by_partial_link_text(item[1]).click()
                     finalize(item)
@@ -127,36 +131,41 @@ def finalize(item):
     checker()
     waitfunctioncart()
     try:
+        print "Selecting the color"
         driver.implicitly_wait(2)
         driver.find_element_by_xpath(str("//a[@data-style-name=" + str("'") + str(item[2]) + str("'") + str("]"))).click()
     except:
-        print "color selection failed for item one, getting default color"
+        print "color selection failed for this item, getting default color"
     if len(item) is 4:
         try:
+            print "Getting size"
             driver.implicitly_wait(.25)
             thing = Select(driver.find_element_by_id("size"))
-            thing.select_by_visible_text(item[2])
+            thing.select_by_visible_text(item[4])
         except:
             try:
                 driver.implicitly_wait(.25)
                 thing = Select(driver.find_element_by_id("size"))
-                thing.select_by_visible_text(item[2])
+                thing.select_by_visible_text(item[4])
             except:
-                print "Getting available size"
+                print "Size selection failed-getting default size"
     else:
         pass
     while True:
         try:
+            print "Now trying to add to cart"
             driver.implicitly_wait(2)
             driver.find_element_by_css_selector('input.button').click()
             break
         except:
             if int(items) == 1:
+                print "Item appears to be out of stock; I will keep refreshing and looking until it restocks"
                 refreshfunc()
             else:
                 try:
                     driver.implicitly_wait(3)
                     driver.find_element_by_css_selector('input.button').click()
+                    break
                 except:
                     print "Cannot add this item to cart, trying to get another item"
                     break
@@ -170,6 +179,7 @@ def checkout():
     else:
         pass
     waitfunctioncheckout()
+    print "starting checkout process"
     try:
         driver.implicitly_wait(2)
         elemen = driver.find_elements_by_class_name('iCheck-helper')
@@ -185,12 +195,13 @@ def checkout():
     try:
         driver.implicitly_wait(10)
         driver.find_element_by_class_name("errors")
+        print "Supreme being sneaky!Autofill failed-starting backup checkout process"
         backupcheckout()
-        injectionpayload()
     except:
         print "Bot complete, enjoy your items!"
 def backupcheckout():
     while True:
+        print "Starting backupcheckout process"
         driver.implicitly_wait(2)
         inputs = driver.find_elements_by_tag_name("input")
         inputs[2].clear()
@@ -213,13 +224,16 @@ def backupcheckout():
         try:
             driver.implicitly_wait(5)
             driver.find_element_by_class_name("errors")
-            pass
+            backupcheckout()
         except:
             print "Checkout complete! Enjoy!"
             break
+    injectionpayload()
+
 
 def captcha(num):
     while True:
+        print "Getting CAPTCHA token"
         r  = requests.post("http://api.captchasolutions.com/solve", data={'p':'nocaptcha', 'googlekey':'6LeWwRkUAAAAAOBsau7KpuC9AV-6J8mhw4AjC3Xz', 'pageurl':'https://www.supremenewyork.com/checkout', 'key':key, 'secret':secret, 'out':'text'})
         txt = r.text
         token = str(txt)
@@ -229,16 +243,18 @@ def captcha(num):
         else:
             print "Extracted captcha token successfully. CAPTCHA token: %s" % token
             token_list.append(token)
-            if num == 1:
+            if int(num) == 1:
                 break
             else:
                 pass
 
 def injectionpayload():
+    print "Starting Token Injection"
     driver.implicitly_wait(3)
     driver.execute_script("document.getElementById('g-recaptcha-response').style.display = 'unset';")
     driver.implicitly_wait(3)
     driver.find_element_by_tag_name("textarea").send_keys(token_list[-1])
+    print "Token injected. Submitting the form..."
     driver.implicitly_wait(3)
     driver.execute_script("document.getElementById('checkout_form').submit()")
 
