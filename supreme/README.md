@@ -22,7 +22,7 @@ To use the windows bot, follow these steps:
 
 The config files contains all the necessary info that is needed to successfully run the bot. This info includes: your personal "key" and "secret" and the path to your chrome profile as well as all of your checkout info that the bot uses should Autofill fail.
 
-To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. The current rate for a "key" and "secret" is $14-all money is used to fund our CAPTCHA service. 
+To successfully run this bot, you will need to obtain a "key" and "secret" by either emailing grandstreetsupreme@gmail.com; or messaging /u/grandstreetsupreme on Reddit. 
 Furthermore, this bot uses your default chrome profile(the path to which can be obtained by typing chrome://version into the url bar of google chrome and copying the Profile Path) and, as such, it is expected that you have all of your checkout information autofilled on the checkout page of Supreme's website. 
 
 Once you have your key, path and secret and checkout info, you can simply paste them into the appropriate places in the config file.
