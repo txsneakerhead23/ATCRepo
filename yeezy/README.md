@@ -12,7 +12,7 @@ Run: cd ATCRepo-master
 
 Run: cd yeezy
 
-Run: python ftlinks.py
+Run: python ftllinks.py
 
 Windows:
 Download and install Python 2.7
@@ -30,7 +30,7 @@ CLick "Open command window here"
 RUn: cd ATCRepo-master
 
 Run: cd yeezy
-Run: python ftlinks.py
+Run: python ftllinks.py
 
 All:
 Request keys are valid for 5 minutes only! RUn this script and extract one like 4 minutes before release!
