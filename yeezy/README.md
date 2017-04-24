@@ -10,6 +10,8 @@ Run: cd Downloads
 
 Run: cd ATCRepo-master
 
+Run: cd yeezy
+
 Run: python ftlinks.py
 
 Windows:
