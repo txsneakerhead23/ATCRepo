@@ -31,6 +31,7 @@ Run: cd yeezy
 Run: python ftlinks.py
 
 All:
+Request keys are valid for 5 minutes only! RUn this script and extract one like 4 minutes before release!
 Watch this video: https://www.youtube.com/watch?v=0EZPROA4tf4&list=UU7cxo8Ra7Do-1MaoQss6_cA&index=11 to learn how to get a request key.
 All other data can be found in the url of the shou you wish to buy or the source code of the product page
 
